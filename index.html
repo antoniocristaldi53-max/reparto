@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <meta name="referrer" content="no-referrer">
+  <!-- Sicurezza: la pagina può caricare solo i propri file e non può contattare altri siti. -->
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <!-- App installabile (Safari → Condividi → Aggiungi alla schermata Home) -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Reparto">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1a1d23" media="(prefers-color-scheme: dark)">
+  <link rel="apple-touch-icon" href="icone/icona-180.png">
+  <link rel="icon" type="image/png" href="icone/icona-192.png">
+  <title>Reparto – promemoria personale per il giro in corsia</title>
+  <meta name="description" content="App personale e offline per appunti di reparto. Non ha account, non chiede credenziali e non invia dati: tutto resta sul dispositivo.">
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/app.js"></script>
+</head>
+<body>
+  <!-- Testo visibile prima che l'app parta (e a chi controlla la pagina): spiega cos'è. -->
+  <main id="app">
+    <h1>Reparto</h1>
+    <p>Promemoria personale per il giro in corsia, usato da un solo medico. Funziona offline.</p>
+    <p>Non ci sono account né accessi: il PIN eventualmente richiesto serve solo a bloccare l'app su questo
+      dispositivo e non viene inviato a nessuno. Nessun dato lascia il dispositivo.</p>
+  </main>
+  <noscript>Questa app ha bisogno di JavaScript.</noscript>
+</body>
+</html>
